@@ -80,3 +80,58 @@ console.log(message2);
 // }
 
 // console.log(func3(10, 4));
+
+/**
+ * 分割代入
+ */
+
+// const myProfile = {
+//   namae: "じゃけぇ",
+//   nenrei: 28
+// };
+
+// const msg1 = `名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`;
+// console.log(msg1);
+
+// const { namae, nenrei } = myProfile;
+
+// const msg2 = `名前は${namae}です。年齢は${nenrei}歳です。`;
+// console.log(msg2);
+
+// const myProfile1 = ['じゃけぇ', 28];
+
+// const message3 = `名前は${myProfile1[0]}です。年齢は${myProfile1[1]}歳です。`;
+// console.log(message3);
+
+// const [nm, ag] = myProfile1;
+// const message4 = `${nm}と${ag}です`;
+
+// console.log(message4);
+
+// /**
+//  * デフォルト値, 引数など
+//  */
+
+// const sayHello = (name = "ゲスト") => console.log(`hi! ${name}さん！`);
+// sayHello();
+
+/**
+ * スプレッド構文 ...
+ *
+ */
+
+// 配列の展開
+// const arr1 = [1, 2];
+// // console.log(arr1);
+// // console.log(...arr1);
+
+// const sumFunc = (num1, num2) => console.log(num1 * num2);
+// sumFunc(arr1[0], arr1[1]);
+// sumFunc(...arr1);
+
+//　まとめる
+const arr2 = [1, 2, 3, 4, 5];
+const [num1, num2, ...arr3] = arr2;
+console.log(num1);
+console.log(num2);
+console.log(arr3);
